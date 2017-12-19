@@ -8,10 +8,19 @@
     <script src="base64.js"></script>
     <script>
         var str = 'JS 实现 Base64 加密、解密算法 。'
+        console.log('原文：' + str);
         var text = Base64.encode(str);
         console.log('Encode Text:',text);
         text = Base64.decode(text);
         console.log('Decode Text:',text);
+        var tables = [
+            {
+               '加密': 'Base64.encode(text)',
+               '解密': 'Base64.decode(text)' 
+            }
+        ]
+        console.log('Base64 加密解密API')
+        console.table(tables)
     </script>
 </head>
 <body>
