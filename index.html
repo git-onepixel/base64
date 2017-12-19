@@ -13,12 +13,14 @@
         console.log('Encode Text:',text);
         text = Base64.decode(text);
         console.log('Decode Text:',text);
-        var tables =   {
-               '加密': 'Base64.encode(text)',
-               '解密': 'Base64.decode(text)' 
+        var tables =  {
+            'Base64': {
+               '加密': 'encode(text)',
+               '解密': 'decode(text)' 
+             }
         }
         
-        console.log('Base64 加密解密API')
+        console.log('Base64 加密解密 API 说明')
         console.table(tables)
     </script>
 </head>
